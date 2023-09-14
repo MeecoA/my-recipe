@@ -1,7 +1,7 @@
 // import axios from "axios";
 // react router
 import "./App.css";
-import { Routes, BrowserRouter, Route } from "react-router-dom";
+import { Routes, BrowserRouter, Route, HashRouter } from "react-router-dom";
 import { useState } from "react";
 //components
 import NavBar from "./components/NavBar";
@@ -30,7 +30,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route path="/" element={<Home></Home>}></Route>
@@ -42,7 +42,7 @@ function App() {
           <Route path="favorites" element={<Favorites handleAddToFav={handleAddToFav} favorites={favorites} />}></Route>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 export default App;
