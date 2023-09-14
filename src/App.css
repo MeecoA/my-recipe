@@ -1,0 +1,248 @@
+#country-select {
+  width: 100px;
+}
+
+.meals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.meal-card {
+  transition: 0.5s;
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.fav-card {
+  height: 400px;
+}
+.fave-container {
+  display: flex;
+  justify-content: center;
+}
+
+.meal-card:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#mealImg {
+  border-radius: 20px;
+  height: 280px;
+}
+#mealName {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+}
+#navBar {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  margin-bottom: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  cursor: pointer;
+  color: orange;
+  transition: 0.5s;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+.nav-link:hover {
+  color: orange;
+  transition: 0.5s;
+  padding: 20px;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.typewriter {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.typewriter h1 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2s;
+}
+.typewriter h2 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(45, end), blink-caret 0.75s step-end infinite;
+}
+#mainLogo {
+  width: 300px;
+  animation: scaling 1s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes scaling {
+  from {
+    scale: 1.5;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.details-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.details-wrapper {
+  height: fit-content;
+  width: 50%;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  gap: 10px;
+}
+.ingredients-container,
+.instructions-container {
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.ingredients-container:hover {
+  scale: 1.03;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.instructions-container:hover {
+  scale: 1.03;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.instructions {
+  text-indent: 10%;
+}
+
+.hover-mouse-title {
+  display: flex;
+  justify-content: center;
+}
+.hover-mouse-title div {
+  background-color: orange;
+  padding: 10px;
+  font-weight: bold;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.MuiButtonBase-root a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn-container-fav {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.btn-container-recipe {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.remove-icon {
+  transition: 0.5s;
+}
+.remove-icon:hover {
+  transition: 0.5s;
+  color: red;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.go-to-link {
+  display: flex;
+}
+
+.link-add a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.link-add a:hover {
+  background-color: orange;
+  transition: 0.3s;
+  font-weight: bold;
+}
