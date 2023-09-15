@@ -44,7 +44,11 @@ const Favorites = ({ favorites, handleAddToFav }) => {
         <div>
           <h1>You don't have favorites.</h1>
           <div className="link-add">
-            <Link to="/recipes">Click to Add</Link>
+            <Link to="/recipes">Click to Add - By Country</Link>
+          </div>
+          <br></br>
+          <div className="link-add">
+            <Link to="/recipes-by-category">Click to Add - By Category</Link>
           </div>
         </div>
       )}

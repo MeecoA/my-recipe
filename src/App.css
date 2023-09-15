@@ -153,6 +153,7 @@ li {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  
 }
 .details-wrapper {
   height: fit-content;
@@ -164,6 +165,9 @@ li {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   gap: 10px;
 }
+
+
+
 .ingredients-container,
 .instructions-container {
   width: 50%;
@@ -245,4 +249,30 @@ li {
   background-color: orange;
   transition: 0.3s;
   font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .details-wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ingredients-container,
+.instructions-container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: small;
+}
+
+.typewriter h1{
+  font-size: large;
+}
+.typewriter h2{
+  font-size: medium;
+}
+
 }

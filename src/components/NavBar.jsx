@@ -18,7 +18,12 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="recipes" className="nav-link">
-              RECIPES
+              RECIPES by COUNTRY
+            </Link>
+          </li>
+          <li>
+            <Link to="recipes-by-category" className="nav-link">
+              RECIPES by CATEGORY
             </Link>
           </li>
           <li>

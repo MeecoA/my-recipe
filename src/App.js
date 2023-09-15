@@ -9,6 +9,7 @@ import Recipes from "./components/Recipes";
 import Home from "./components/Home";
 import RecipeDetails from "./components/RecipeDetails";
 import Favorites from "./components/Favorites";
+import RecipeByCategory from "./components/RecipeByCategory";
 function App() {
   const [favorites, setFavorites] = useState([]);
   const [isFavorite, setIsFavorite] = useState(false);
@@ -40,6 +41,8 @@ function App() {
           ></Route>
           <Route path="recipe-details/:id" element={<RecipeDetails />}></Route>
           <Route path="favorites" element={<Favorites handleAddToFav={handleAddToFav} favorites={favorites} />}></Route>
+          <Route path="recipes-by-category" element={<RecipeByCategory handleAddToFav={handleAddToFav} favorites={favorites} />}></Route>
+
         </Route>
       </Routes>
     </HashRouter>
