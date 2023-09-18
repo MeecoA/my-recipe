@@ -1,0 +1,12 @@
+docker build -t my-recipe-image .
+
+docker run -d -p 8080:3000 --name my-recipe-container my-recipe-image
+
+-d: Runs the container in detached mode (in the background).
+
+-p 8080:3000: Maps port 8080 on your host machine to port 3000 inside the container. Adjust the ports as needed.
+
+--name my-recipe-container: Assigns the name my-recipe-container to the running container.
+
+my-recipe-image: Specifies the name of the Docker image to use.
+
